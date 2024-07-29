@@ -13,7 +13,9 @@ export class AddCalculatorComponent implements OnInit {
   private delimiter: any = /,|\n/;
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log('initialized :>> ');
+  }
 
   sum(): void {
 

@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./add-calculator.component.css'],
 })
 export class AddCalculatorComponent implements OnInit {
-  name: string = 'Calculator';
+  @Input() name: string = 'Calculator';
   public value: string = '';
   public totalValue!: number;
   public errorMessage!: string;

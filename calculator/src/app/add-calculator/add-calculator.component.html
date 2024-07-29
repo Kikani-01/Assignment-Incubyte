@@ -1,0 +1,15 @@
+<h1 class="text-center mb-3">{{ name }}</h1>
+
+<div class="container my-5">
+  <div class="col-10 d-flex justify-content-between">
+    <textarea class="form-control mx-2" type="string" placeholder="Please add number.." [(ngModel)]="value"></textarea>
+
+    <button class="btn btn-success col-4" (click)="sum()">ADD</button>
+  </div>
+
+  <h3 *ngIf="totalValue" class="text-center">
+    Sum of the value is <strong>{{ totalValue }} </strong>
+  </h3>
+
+  <p *ngIf="errorMessage" class="text-center text-danger">{{errorMessage}}</p>
+</div>
